@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Health Chatbot (Demo)</title>
+    <style>
+      body { font-family: Arial, sans-serif; max-width: 800px; margin: 2rem auto; }
+      #chat { border: 1px solid #ddd; padding: 1rem; height: 60vh; overflow: auto; background:#f9f9f9 }
+      .msg { margin: .5rem 0; }
+      .user { text-align: right; color: #0b79d0 }
+      .assistant { text-align: left; color: #222 }
+      #inputRow { margin-top: 1rem; display:flex; gap: .5rem; }
+      textarea { flex:1; height: 4rem; }
+    </style>
+  </head>
+  <body>
+    <h1>Health Chatbot — Demo</h1>
+    <div id="disclaimer" style="background:#fff8c4;padding:.7rem;border:1px solid #f0e68c">
+      <strong>Disclaimer:</strong> This bot provides general health information and is not a substitute for professional medical care. For urgent or emergency issues call emergency services immediately.
+    </div>
+    <div id="chat"></div>
+
+    <div id="inputRow">
+      <textarea id="message" placeholder="Type your question..."></textarea>
+      <button id="send">Send</button>
+    </div>
+
+    <script src="/static/chat.js"></script>
+  </body>
+</html>

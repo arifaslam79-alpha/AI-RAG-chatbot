@@ -1,0 +1,7 @@
+flask
+openai
+python-dotenv
+gunicorn
+redis>=4.0
+faiss-cpu
+numpy
